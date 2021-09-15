@@ -1,0 +1,49 @@
+package sampleproject;
+import java.util.Scanner;
+
+
+public class Spendingtree 
+{
+	public static final int spendingmoney=100;
+	public static final int maxitem=3;
+	
+
+	public static void main(String[] args)
+	{
+	    Scanner keyboard = new Scanner (System.in);
+	    boolean havemoney=true;
+	    int lefttospend= spendingmoney, totalspend=0,itemnum=1;
+	    while (havemoney&&(itemnum<=maxitem))
+	    {
+	    	System.out.println("You may buy upto " +(maxitem-itemnum+1));
+	    	System.out.println("costing no more than "+lefttospend);
+	    	System.out.println("Enter cost of item= "+itemnum);
+	    	int itemcost=keyboard.nextInt();
+	    	if(itemcost<=lefttospend)
+	    	{
+	    		System.out.println("You may buy this item ");
+	    		totalspend= totalspend+itemcost;
+	    		
+	    		System.out.println("You spent  "+totalspend );	
+	    		lefttospend = spendingmoney - totalspend;
+	    		if(lefttospend>0)
+	    			itemnum++;
+	    		else
+	    		{
+	    			System.out.println("You are out off money ");
+	    			havemoney=false;
+	    		}
+	    	}
+	    		else 
+	    		{
+	    			System.out.println("You cannot  buy this item ");
+	    			
+	    	
+	    	}
+		
+	    	System.out.println("You spent  " +totalspend + ",and are done shopping");
+	    }
+
+	}
+
+}

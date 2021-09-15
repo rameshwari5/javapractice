@@ -1,0 +1,28 @@
+package sampleproject;
+
+import java.util.Scanner;
+
+public class dowhiledemo {
+
+	public static void main(String[] args) 
+	{
+
+		int count, no;
+		System.out.println("Enter a no");
+        Scanner keyboard = new Scanner (System.in);
+        no=keyboard.nextInt();
+        
+        count=1;
+       do
+        {
+        	System.out.println(count + ",");
+        	count++;
+        	
+        } while(count<=no);
+        
+        System.out.println();
+        System.out.println("Buckle my shoe");
+
+	}
+
+}

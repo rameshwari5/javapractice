@@ -1,0 +1,26 @@
+package sampleproject;
+import java.util.Scanner;
+
+public class whiledemo
+{
+
+	public static void main(String[] args)
+	{
+		int count, no;
+		System.out.println("Enter a no");
+        Scanner keyboard = new Scanner (System.in);
+        no=keyboard.nextInt();
+        
+        count=1;
+        while(count<=no)
+        {
+        	System.out.println(count+ ",");
+        	count++;
+        	
+        }
+        
+        System.out.println();
+        System.out.println("Buckle my shoe");
+	}
+
+}

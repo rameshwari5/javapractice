@@ -1,0 +1,15 @@
+package sampleproject;
+
+public class fordemo   
+{
+   public static void main(String[] args)
+   {
+   int i;
+   for (i=3;i>=0;i--)
+   {
+	   System.out.println(i +"\n and counting");
+	   
+   }
+   System.out.println("Blast off");
+   }
+}
