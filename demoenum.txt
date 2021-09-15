@@ -1,0 +1,47 @@
+//////Enum Demo Program////////////
+
+import java.util.Scanner;
+
+enum MovieRating
+{
+	E,A,B
+	
+}
+
+public class Demoenum { 
+
+
+	public static void main(String[] args) 
+	{
+		 MovieRating rating;
+		 
+		 rating=MovieRating.E;
+		 rating=MovieRating.A;
+		 rating=MovieRating.E
+		 
+		
+		 
+	switch (rating)
+	{
+	case E:               //Excellent
+		rating = MovieRating.E;
+		System.out.println("You must See this movie");
+		break;
+	case A:               //good
+		rating = MovieRating.A;
+		System.out.println("This movie is ok but not great");
+		break;
+	case B:               //Bad
+		rating = MovieRating.B;
+		System.out.println("Dont watch this movie ");
+		break;
+		default:
+			System.out.println("You put wrong rating ");
+		
+		
+		
+	}
+
+	}
+
+}

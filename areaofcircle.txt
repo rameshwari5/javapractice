@@ -1,0 +1,22 @@
+package sampleproject;
+import java.util.Scanner;
+
+public class Circlecalculation 
+
+{
+	public static final  double pi=3.14;
+  public static void main(String[] args)
+  
+  {
+	  
+	  double r,area;
+	  Scanner keyboard = new Scanner(System.in);
+	  System.out.println("\t Enter the radius of circle in inches = ");
+	  r=keyboard.nextDouble();                                       //Accepting the value from user in inches 
+	  area=pi*r*r;                                                   //formula of area
+	  System.out.println("\t A Area of circle = \t"+area+ "in sqaure inches");
+	  
+	  
+  }
+	
+}
